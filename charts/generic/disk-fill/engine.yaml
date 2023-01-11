@@ -34,4 +34,8 @@ spec:
 
             # provide the socket file path
             - name: SOCKET_PATH
-              value: '/var/run/docker.sock'    
+              value: '/var/run/docker.sock'   
+
+            # provide the storage type, persistent or ephemeral
+            - name: STORAGE_TYPE
+              value: 'persistent'

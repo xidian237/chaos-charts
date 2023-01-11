@@ -110,6 +110,10 @@ spec:
     - name: SOCKET_PATH
       value: '/var/run/docker.sock'  
 
+    # provide the storage type, persistent or ephemeral
+    - name: STORAGE_TYPE
+      value: 'persistent'
+
     ## it defines the sequence of chaos execution for multiple target pods
     ## supported values: serial, parallel
     - name: SEQUENCE
