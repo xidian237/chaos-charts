@@ -21,6 +21,9 @@ rules:
   - apiGroups: [""]
     resources: ["pods"]
     verbs: ["create","delete","get","list","patch","update", "deletecollection"]
+  - apiGroups: [""]
+    resources: ["persistentvolumeclaims"]
+    verbs: ["get"]
   # Performs CRUD operations on the events inside chaosengine and chaosresult
   - apiGroups: [""]
     resources: ["events"]
